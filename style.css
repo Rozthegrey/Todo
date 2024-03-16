@@ -1,0 +1,120 @@
+.box{
+    width: 100%;
+    height:100vh;
+    background:linear-gradient(to bottom left, blue,rgb(183, 31, 221) ) ;
+
+}
+.pad{
+    border-radius: 0.9rem;
+    background: #fff;
+    max-width: 440px;
+padding: 20px 30px;
+height: 30vh;
+position: relative;
+left:39%;
+top:30%;
+min-height: 40vh;
+}
+
+.card{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 9px, 15px;
+    background-color: #ffffff;
+}
+
+.card h1{
+    font-size: 27px;
+    color:rgb(0, 0, 66)
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+}
+
+.search input{
+    background-color: grey;
+    color:black;
+    border-radius: 2rem;
+    width: 80%;
+}
+
+.search button{
+    background-color: orangered;
+    color:#fff;
+    padding: 20px 15px;
+    cursor: pointer;
+}
+
+.col ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap:50px
+}
+
+.col input{
+    height: 30px;
+    width: 30px;
+   
+}
+
+.col li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    justify-content: space-between;
+    gap:30px;
+}
+
+.col li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(uncheck-16.png);
+    background-size: cover;
+    background-position: center;
+top:12px;
+left:8px;
+       }
+
+ .col li.checked{
+        text-decoration: line-through;
+    }
+
+    .col li.checked::before{
+        height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(images.png);
+    background-size: cover;
+    background-position: center;
+top:12px;
+left:8px;
+    }
+
+    .col li span{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top:4px;
+        right: 0;
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .col li span:hover{
+        background: #edeef0;
+        border-radius: 50%;
+    }
+
